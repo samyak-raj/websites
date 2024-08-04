@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Library</title>
+  </head>
+  <body class="bg-gray-300 overflow-y-auto">
+    <div class="container">
+      <nav class="mx-auto text-center bg-cyan-500">
+        <h1
+          class="heading font-mono py-5 font-bold text-4xl md:text-7xl text-white"
+        >
+          Library
+        </h1>
+      </nav>
+
+      <div class="btn text-center">
+        <button
+          type="submit"
+          class="font-semibold md:text-2xl px-3 py-4 my-5 border-2 text-white bg-cyan-500 border-cyan-500 shadow-lg hover:brightness-95 shadow-cyan-500/50 rounded-full"
+          id="btnAdd"
+        >
+          Add Book
+        </button>
+      </div>
+
+      <div class="main">
+        
+      </div>
+
+      <dialog
+        id="DialogBox"
+        class="z-10 mt-56 md:m-auto rounded-2xl shadow-md shadow-slate-500"
+      >
+        <form action="#" method="dialog" class="px-9 py-10 md:px-14 space-y-5" id="Bookform">
+          <div>
+            <label for="book-title" class="font-bold">Title: </label>
+            <input
+              type="text"
+              id="book-title"
+              class="px-2 py-0.5 ml-3 md:w-56 border border-blue-600 rounded-md"
+              placeholder="Eg: One Piece"
+              required
+            />
+          </div>
+
+          <div>
+            <label for="book-author" class="font-bold">Author: </label>
+            <input
+              type="text"
+              id="book-author"
+              class="px-2 py0.5 ml-3 border border-blue-600 rounded-md"
+              placeholder="Eg: Eiichiro Oda"
+              required
+            />
+          </div>
+
+          <div>
+            <label for="book-pages" class="font-bold">No. of pages: </label>
+            <input
+              type="number"
+              id="book-pages"
+              class="px-2 py-0.5 ml-3 border border-blue-600 w-40 rounded-md"
+              placeholder="Eg: 69"
+              required
+            />
+          </div>
+
+          <div>
+            <label for="isBookRead" class="font-bold">Did you read it? </label>
+            <input type="checkbox" id="isBookRead" class="ml-3" required />
+          </div>
+
+          <div class="flex justify-evenly">
+            <button
+              class="bg-blue-500 shadow-lg shadow-blue-500/50 text-white rounded-md px-2 py-1"
+              id="addBook"
+            >
+              Done
+            </button>
+            <button
+              class="bg-blue-500 shadow-lg shadow-blue-500/50 text-white rounded-md px-2 py-1"
+              id="closedialog"
+            >
+              Cancel
+            </button>
+          </div>
+        </form>
+      </dialog>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

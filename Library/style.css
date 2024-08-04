@@ -1,0 +1,76 @@
+.heading {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+
+.main{
+  display: grid;
+  grid-template-columns: repeat(1, minmax(0, 1fr));
+  gap: 2rem;
+  padding: 2rem;
+}
+
+@media (min-width: 768px) {
+    .main{grid-template-columns: repeat(3, minmax(0, 1fr));}
+}
+
+.booksContainer {
+  margin: auto;
+  padding: 2rem;
+  background-color: whitesmoke;
+  display: grid;
+  gap: 2rem;
+  height: 30rem;
+  width: 19rem;
+  border-radius: 1rem;
+  box-shadow: 0 10px 15px -2px #06b6d4
+    
+}
+
+.card {
+  font-size: 20px;
+  font-weight: 600;
+  display: flex;
+  flex-direction: column;
+  overflow-wrap: break-word;
+  text-align: center;
+}
+
+.btnRead{
+  font-weight: 600;
+  font-size: large;
+  background-color: lightgreen;
+  padding: 15px 0px;
+  border-radius: 15px;
+  transition: filter 0.2s ease-in-out;
+
+  &:hover{
+    filter: brightness(90%);
+  }
+}
+
+.btnUnread{
+  font-weight: 600;
+  font-size: large;
+  background-color: lightcoral;
+  padding: 15px 0px;
+  border-radius: 15px;
+  transition: filter 0.2s ease-in-out;
+
+  &:hover{
+    filter: brightness(90%);
+  }
+}
+
+.btnRemove{
+  font-weight: 600;
+  font-size: large;
+  background-color: #e9e9ed;
+  padding: 15px 0px;
+  border-radius: 15px;
+  transition: filter 0.2s ease-in-out;
+
+  &:hover{
+    filter: brightness(90%);
+  }
+}
